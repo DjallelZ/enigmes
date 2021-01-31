@@ -11,6 +11,8 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var enigmeLabel: UILabel!
     
+    @IBOutlet weak var enigmeTitreBouton: UIButton!
+    
     let enigmes = ["Enigme 1", "Enigme 2", "Enigme 3"]
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
@@ -24,7 +26,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")! as! Cell
         
-        cell.enigmeLabel.text = enigmes[indexPath.row]
+        cell.enigmeTitreBouton.setTitle(enigmes[indexPath.row], for: .normal)
         
         return cell
     }

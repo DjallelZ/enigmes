@@ -11,4 +11,5 @@ class Cell : UITableViewCell {
 
     @IBOutlet weak var enigmeLabel: UILabel!
     
+    @IBOutlet weak var enigmeTitreBouton: UIButton!
 }
