@@ -17,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAy-eW-3Jx">
-                                <rect key="frame" x="184" y="187" width="46" height="30"/>
+                                <rect key="frame" x="187" y="187" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Facile"/>
                                 <connections>
                                     <segue destination="IfC-yQ-lnZ" kind="push" id="fIS-ah-QSj"/>
                                 </connections>
@@ -27,15 +27,15 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElU-8O-XGK">
                                 <rect key="frame" x="184" y="386" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Moyen"/>
                                 <connections>
                                     <segue destination="IfC-yQ-lnZ" kind="push" id="yaM-EB-cA7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q15-eF-oMV">
-                                <rect key="frame" x="184" y="563" width="46" height="30"/>
+                                <rect key="frame" x="181" y="563" width="52" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Difficile"/>
                                 <connections>
                                     <segue destination="IfC-yQ-lnZ" kind="push" id="uh0-jm-U5n"/>
                                 </connections>
