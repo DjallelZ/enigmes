@@ -45,6 +45,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Accueil" id="BGa-dj-1y9"/>
+                    <connections>
+                        <outlet property="boutonDifficile" destination="q15-eF-oMV" id="xqU-UG-PI7"/>
+                        <outlet property="boutonFacile" destination="TAy-eW-3Jx" id="zWx-sQ-jFW"/>
+                        <outlet property="boutonMoyen" destination="ElU-8O-XGK" id="b1d-XK-R9H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,7 +162,6 @@
         <!--Navigation Controller-->
         <scene sceneID="q47-eS-HuC">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VzN-S4-N3y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RDb-Qi-7UY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hWS-xG-Swe">
@@ -169,6 +173,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GR1-dM-Ut9"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VzN-S4-N3y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="900.00000000000011" y="87.723214285714278"/>
         </scene>
