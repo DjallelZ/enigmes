@@ -13,6 +13,14 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var enigmeTitreBouton: UIButton!
     
+    var difficulte: String = ""
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.title = difficulte
+    }
+    
     let enigmes = ["Enigme 1", "Enigme 2", "Enigme 3"]
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
