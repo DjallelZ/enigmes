@@ -32,7 +32,7 @@ class EnigmeViewController: UIViewController {
         
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         
-        if reponseTextFieldLabel.text!.contains(enigme.reponse) {
+        if reponseTextFieldLabel.text!.lowercased().contains(enigme.reponse.lowercased()) {
             alertController = UIAlertController(title: "Félicitations !", message: enigme.explication, preferredStyle: .alert)
         } else {
             alertController = UIAlertController(title: "Dommage", message: "Ce n'est pas la réponse attendue.", preferredStyle: .alert)
