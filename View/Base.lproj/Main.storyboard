@@ -42,7 +42,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.13002202930000001" green="0.1027003297" blue="0.080605419110000007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Accueil" id="BGa-dj-1y9"/>
                     <connections>
@@ -86,6 +86,7 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.13002202930000001" green="0.1027003297" blue="0.080605419110000007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <outlet property="enigmeTitreBouton" destination="ijw-dW-O92" id="Xj6-cc-F2P"/>
                                         </connections>
@@ -98,7 +99,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZcG-T1-Wdt"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.13002202930000001" green="0.1027003297" blue="0.080605419110000007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="4BV-Tf-pl9" firstAttribute="top" secondItem="ZcG-T1-Wdt" secondAttribute="top" id="26S-sd-7PI"/>
                             <constraint firstItem="4BV-Tf-pl9" firstAttribute="top" secondItem="ZcG-T1-Wdt" secondAttribute="top" id="3Sp-8R-f79"/>
@@ -146,12 +147,14 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8iE-SZ-Sp9">
                                 <rect key="frame" x="20" y="541" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="75A-MW-Zzx"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.13002202930000001" green="0.1027003297" blue="0.080605419110000007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="aEu-ws-fhh"/>
                     <connections>
@@ -190,6 +193,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
