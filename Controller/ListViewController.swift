@@ -21,7 +21,8 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.title = difficulte
     }
     
-    let enigmes = ["Enigme 1", "Enigme 2", "Enigme 3"]
+    // Récupération de la liste d'énigme depuis l'instance unique de EnigmeService
+    let enigmes: [Enigme] = EnigmeService.serviceEnigme.listeEnigmes
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         
@@ -34,9 +35,23 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")! as! Cell
         
-        cell.enigmeTitreBouton.setTitle(enigmes[indexPath.row], for: .normal)
+        cell.enigmeTitreBouton.setTitle(enigmes[indexPath.row].titre, for: .normal)
         
         return cell
+    }
+    
+    // Préparation de l'énigme à transmettre à la view contenant la liste des enigmes
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Cast du paramètre Any? afin de pouvoir manipuler les attributs de la classe UIButton
+        let boutonEmetteur: UIButton = sender as! UIButton
+        // objet énigme à envoyer à destination de la view l'affichant
+        let enigmeEmise:Enigme = EnigmeService.serviceEnigme.recupererEnigmeViaTitre(titre: boutonEmetteur.currentTitle!)
+    
+        if segue.destination is EnigmeViewController {
+            let viewController = segue.destination as? EnigmeViewController
+            viewController?.enigme = enigmeEmise
+        }
     }
 
 }
