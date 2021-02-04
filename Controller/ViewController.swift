@@ -15,11 +15,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var boutonDifficile: UIButton!
     
+    
+    // Préparation de la valeur de la variable de difficulté à transmettre à la view contenant la liste des enigmes
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        // Cast du paramètre Any? afin de pouvoir manipuler les attributs de la classe UIButton
         let boutonEmetteur: UIButton = sender as! UIButton
+        // Paramètre de difficulté à envoyer pour générer la liste des enigmes selon le niveau choisi par l'utilisateur
         var difficulteEmise = ""
         
+        // Selon le bouton utilisé par l'utilisateur, on affecte la bonne valeur à la variable à envoyer
         if boutonEmetteur.currentTitle == "Facile" {
             difficulteEmise = "Facile"
         } else if boutonEmetteur.currentTitle == "Moyen" {
