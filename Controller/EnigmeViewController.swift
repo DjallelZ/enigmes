@@ -25,6 +25,22 @@ class EnigmeViewController: UIViewController {
         self.titreEnigmeLabel.text = enigme.titre
         self.texteEnigmeLabel.text = enigme.texte
     }
-
+    
+    
+    @IBAction func clicBoutonReponse(_ sender: Any) {
+        var alertController:UIAlertController
+        
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        if reponseTextFieldLabel.text!.contains(enigme.reponse) {
+            alertController = UIAlertController(title: "Félicitations !", message: enigme.explication, preferredStyle: .alert)
+        } else {
+            alertController = UIAlertController(title: "Dommage", message: "Ce n'est pas la réponse attendue.", preferredStyle: .alert)
+        }
+        
+        alertController.addAction(action)
+        
+        present(alertController, animated: true, completion: nil)
+    }
 }
 

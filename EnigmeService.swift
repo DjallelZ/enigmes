@@ -9,11 +9,11 @@ class EnigmeService {
     var listeEnigmes: [Enigme] = []
     
     private func remplirCollectionEnigmes() {
-        let enigme:Enigme = Enigme(titre: "Titre 1",texte: "Texte ",reponse: "Reponse ",explication: "Explication ")
+        let enigme:Enigme = Enigme(titre: "Titre 1",texte: "Texte ",reponse: "test",explication: "Explication ")
         
         self.listeEnigmes.append(enigme)
         
-        for _ in 1...10 {
+        for _ in 1...20 {
             let enigme:Enigme = Enigme(titre: "Titre ",texte: "Texte ",reponse: "Reponse ",explication: "Explication ")
             
             self.listeEnigmes.append(enigme)
