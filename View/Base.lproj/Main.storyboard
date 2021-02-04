@@ -116,44 +116,50 @@
             </objects>
             <point key="canvasLocation" x="2660.8695652173915" y="87.723214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Enigme View Controller-->
         <scene sceneID="X0n-iJ-kDd">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="JXL-bn-xhK" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="JXL-bn-xhK" customClass="EnigmeViewController" customModule="enigmes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hH9-WE-elT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Na-Ho-fEd">
-                                <rect key="frame" x="186" y="93" width="42" height="21"/>
+                                <rect key="frame" x="20" y="93" width="374" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2G-Du-PXQ">
-                                <rect key="frame" x="184" y="401" width="46" height="30"/>
+                                <rect key="frame" x="184" y="593" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8iE-SZ-Sp9">
-                                <rect key="frame" x="20" y="359" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GD-fm-z6d">
-                                <rect key="frame" x="20" y="137" width="374" height="192"/>
+                                <rect key="frame" x="20" y="187" width="374" height="346"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8iE-SZ-Sp9">
+                                <rect key="frame" x="20" y="541" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="75A-MW-Zzx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="aEu-ws-fhh"/>
+                    <connections>
+                        <outlet property="reponseBouton" destination="R2G-Du-PXQ" id="Bs3-XL-Zku"/>
+                        <outlet property="reponseTextFieldLabel" destination="8iE-SZ-Sp9" id="v2i-52-5ct"/>
+                        <outlet property="texteEnigmeLabel" destination="9GD-fm-z6d" id="HpP-nb-Zz4"/>
+                        <outlet property="titreEnigmeLabel" destination="6Na-Ho-fEd" id="uaC-5d-Fh5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sk3-LT-ib3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
