@@ -1,3 +1,5 @@
+import Foundation
+
 class EnigmeService {
     
     static var serviceEnigme = EnigmeService()
@@ -8,20 +10,23 @@ class EnigmeService {
 
     var listeEnigmes: [Enigme] = []
     
+    // Remplissage du tableau d'enigmes à partir d'un fichier JSON
     private func remplirCollectionEnigmes() {
-        let enigme:Enigme = Enigme(titre: "Titre 1",texte: "Texte ",reponse: "test",explication: "Explication ")
-        
-        self.listeEnigmes.append(enigme)
-        
-        for _ in 1...20 {
-            let enigme:Enigme = Enigme(titre: "Titre ",texte: "Texte ",reponse: "Reponse ",explication: "Explication ")
-            
-            self.listeEnigmes.append(enigme)
+        if let cheminFichier = Bundle.main.url(forResource: "enigmes", withExtension: "json") {
+            do {
+                let donnees = try Data(contentsOf: cheminFichier)
+                let jsonDecoder = JSONDecoder()
+                let donneesJson = try jsonDecoder.decode([Enigme].self, from: donnees)
+                print(donneesJson)
+                self.listeEnigmes = donneesJson
+            } catch {
+                print(error)
+            }
         }
     }
     
     func recupererEnigmeViaTitre(titre: String) -> Enigme {
-        var enigmeARenvoyer:Enigme = Enigme(titre: "", texte: "", reponse: "", explication: "")
+        var enigmeARenvoyer:Enigme = Enigme(titre: "", texte: "", reponse: "", explication: "", difficulte: "", statut:"")
         for enigme in listeEnigmes {
             if enigme.titre == titre {
                 enigmeARenvoyer = enigme
