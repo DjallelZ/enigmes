@@ -9,7 +9,8 @@ import UIKit
 
 class EnigmeViewController: UIViewController {
     
-    var enigme: Enigme = Enigme(titre: "", texte: "", reponse: "", explication: "")
+    // Variable contenant l'enigme envoyé par ListViewController suite au clic sur celle-ci dans la liste
+    var enigme: Enigme = Enigme(titre: "", texte: "", reponse: "", explication: "", difficulte: "", statut: "")
     
     @IBOutlet weak var titreEnigmeLabel: UILabel!
     
