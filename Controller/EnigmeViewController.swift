@@ -26,18 +26,22 @@ class EnigmeViewController: UIViewController {
         self.texteEnigmeLabel.text = enigme.texte
     }
     
-    
+    // Méthode lancée au clic sur le bouton "Soumettre"
     @IBAction func clicBoutonReponse(_ sender: Any) {
         var alertController:UIAlertController
         
+        // Définition du bouton de réponse à l'alerte donnée juste après
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         
+        // Si la réponse donnée contient la réponse de l'énigme, on félicite l'utilisateur au travers d'une alerte tout en lui affichant un petit texte explicatif
         if reponseTextFieldLabel.text!.lowercased().contains(enigme.reponse.lowercased()) {
             alertController = UIAlertController(title: "Félicitations !", message: enigme.explication, preferredStyle: .alert)
-        } else {
+        }
+        // Sinon on l'informe que ce n'est pas la bonne réponse
+        else {
             alertController = UIAlertController(title: "Dommage", message: "Ce n'est pas la réponse attendue.", preferredStyle: .alert)
         }
-        
+        // Ajout du de l'action du bouton à l'alerte
         alertController.addAction(action)
         
         present(alertController, animated: true, completion: nil)
