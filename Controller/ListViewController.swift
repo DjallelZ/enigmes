@@ -21,8 +21,8 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         title = difficulteChoisie
     }
     
-    // Récupération de la liste d'énigme depuis l'instance unique de EnigmeService
-    let enigmes: [Enigme] = EnigmeService.serviceEnigme.listeEnigmes
+    // Récupération de la liste d'énigme depuis l'instance unique de EnigmeService en fonction de la difficulte choisie
+    lazy var enigmes: [Enigme] = EnigmeService.serviceEnigme.recupererListeEnigmesParDifficulte(difficulte: difficulteChoisie)
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         
