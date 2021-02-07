@@ -13,12 +13,12 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var enigmeTitreBouton: UIButton!
     
-    var difficulte: String = ""
-    
+    var difficulteChoisie: String = ""
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.title = difficulte
+        // Modification du titre de navigation avec pour valeur la difficulté choisie
+        title = difficulteChoisie
     }
     
     // Récupération de la liste d'énigme depuis l'instance unique de EnigmeService

@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         
         if segue.destination is ListViewController {
             let viewController = segue.destination as? ListViewController
-            viewController?.difficulte = difficulteEmise
+            viewController?.difficulteChoisie = difficulteEmise
         }
     }
 }
