@@ -40,9 +40,9 @@ class EnigmeViewController: UIViewController {
         }
         // Sinon on l'informe que ce n'est pas la bonne réponse
         else {
-            alertController = UIAlertController(title: "Dommage", message: "Ce n'est pas la réponse attendue.", preferredStyle: .alert)
+            alertController = UIAlertController(title: "Réessayez !", message: "Ce n'est pas la réponse attendue.", preferredStyle: .alert)
         }
-        // Ajout du de l'action du bouton à l'alerte
+        // Ajout de l'action du bouton à l'alerte
         alertController.addAction(action)
         
         present(alertController, animated: true, completion: nil)
