@@ -1,3 +1,4 @@
+// Codable est l'alias des deux protocoles Encodable et Decodable pour l'encodage/décodage des fichiers 
 class Enigme: Codable {
     // Attributs
     var titre: String = ""
@@ -5,10 +6,10 @@ class Enigme: Codable {
     var reponse: String = ""
     var explication: String = ""
     var difficulte: String = ""
-    var statut: String = ""
+    var statut: Bool
     
     // Constructeur
-    init(titre: String, texte: String, reponse: String, explication: String, difficulte: String, statut: String) {
+    init(titre: String, texte: String, reponse: String, explication: String, difficulte: String, statut: Bool) {
         self.titre = titre
         self.texte = texte
         self.reponse = reponse

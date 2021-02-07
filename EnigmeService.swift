@@ -26,7 +26,7 @@ class EnigmeService {
     }
     
     func recupererEnigmeViaTitre(titre: String) -> Enigme {
-        var enigmeARenvoyer:Enigme = Enigme(titre: "", texte: "", reponse: "", explication: "", difficulte: "", statut:"")
+        var enigmeARenvoyer:Enigme = Enigme(titre: "", texte: "", reponse: "", explication: "", difficulte: "", statut:false)
         for enigme in listeEnigmes {
             if enigme.titre == titre {
                 enigmeARenvoyer = enigme
