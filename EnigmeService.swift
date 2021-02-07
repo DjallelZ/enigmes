@@ -34,5 +34,15 @@ class EnigmeService {
         }
         return enigmeARenvoyer
     }
+    
+    func recupererListeEnigmesParDifficulte(difficulte: String) -> [Enigme] {
+        var listeEnigmesARenvoyer: [Enigme] = []
+        for enigme in listeEnigmes {
+            if enigme.difficulte == difficulte {
+                listeEnigmesARenvoyer.append(enigme)
+            }
+        }
+        return listeEnigmesARenvoyer
+    }
 
 }
