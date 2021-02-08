@@ -16,10 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAy-eW-3Jx">
-                                <rect key="frame" x="150" y="202" width="120" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAy-eW-3Jx">
+                                <rect key="frame" x="147" y="208" width="120" height="50"/>
                                 <color key="backgroundColor" red="0.057329917110000003" green="0.59713831640000004" blue="0.072062638629999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="QYK-yp-zvt"/>
+                                    <constraint firstAttribute="height" constant="50" id="jmg-KJ-4KZ"/>
+                                </constraints>
                                 <state key="normal" title="Facile">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -27,10 +30,13 @@
                                     <segue destination="IfC-yQ-lnZ" kind="push" id="fIS-ah-QSj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElU-8O-XGK">
-                                <rect key="frame" x="147" y="401" width="120" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElU-8O-XGK">
+                                <rect key="frame" x="147" y="378" width="120" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.46708093439999998" blue="0.094855315770000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Nqa-yw-GTm"/>
+                                    <constraint firstAttribute="height" constant="50" id="Ynd-P4-NKd"/>
+                                </constraints>
                                 <state key="normal" title="Moyen">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -38,10 +44,13 @@
                                     <segue destination="IfC-yQ-lnZ" kind="push" id="yaM-EB-cA7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q15-eF-oMV">
-                                <rect key="frame" x="144" y="578" width="120" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q15-eF-oMV">
+                                <rect key="frame" x="147" y="548" width="120" height="50"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MOR-og-WnX"/>
+                                    <constraint firstAttribute="width" constant="120" id="h92-TZ-wQA"/>
+                                </constraints>
                                 <state key="normal" title="Difficile">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -52,6 +61,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.13002202930000001" green="0.1027003297" blue="0.080605419110000007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="q15-eF-oMV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="022-zW-Uvf"/>
+                            <constraint firstItem="TAy-eW-3Jx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0dN-Cs-dFq"/>
+                            <constraint firstItem="q15-eF-oMV" firstAttribute="top" secondItem="ElU-8O-XGK" secondAttribute="bottom" constant="120" id="6JN-UL-To5"/>
+                            <constraint firstItem="ElU-8O-XGK" firstAttribute="top" secondItem="TAy-eW-3Jx" secondAttribute="bottom" constant="120" id="WOb-IN-erk"/>
+                            <constraint firstItem="ElU-8O-XGK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fN4-vY-XCE"/>
+                            <constraint firstItem="TAy-eW-3Jx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="vI2-19-UPy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Accueil" id="BGa-dj-1y9"/>
                     <connections>
