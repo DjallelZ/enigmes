@@ -14,7 +14,7 @@ class EnigmeViewController: UIViewController {
     
     @IBOutlet weak var titreEnigmeLabel: UILabel!
     
-    @IBOutlet weak var texteEnigmeLabel: UILabel!
+    @IBOutlet weak var texteTextField: UITextView!
     
     @IBOutlet weak var reponseTextFieldLabel: UITextField!
     
@@ -22,9 +22,9 @@ class EnigmeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // A l'affichage de la View on modifie le Label et le TextField pour afficher l'enigme
         self.titreEnigmeLabel.text = enigme.titre
-        self.texteEnigmeLabel.text = enigme.texte
+        self.texteTextField.text = enigme.texte
     }
     
     // Méthode lancée au clic sur le bouton "Soumettre"
@@ -44,7 +44,7 @@ class EnigmeViewController: UIViewController {
         }
         // Ajout de l'action du bouton à l'alerte
         alertController.addAction(action)
-        
+        // Présentation de l'alerte à la View
         present(alertController, animated: true, completion: nil)
     }
 }
