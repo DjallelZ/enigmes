@@ -165,66 +165,31 @@
         "difficulte": "Difficile",
         "statut": false
     },{
-        "titre": "",
-        "texte": "",
-        "reponse": "",
-        "explication": "",
+        "titre": "Let's make a deal",
+        "texte": "Lets' make a deal est un jeu télévisé américain\r\n\r\nLe jeu oppose le présentateur à un candidat(vous). Vous êtes face à trois portes fermées. Derrière l'une d'elles se trouve une voiture et derrière chacune des deux autres se trouvent une chèvre.\r\n\r\nVous devez tout d'abord désigner une porte.\r\n\r\nPuis le présentateur dévoile une porte qui n'est ni celle que vous avez choisie, ni celle cachant la voiture (le présentateur sait où se trouve la voiture).\r\n\r\nVous avez alors le droit ou bien d'ouvrir la porte que vous avez choisie initialement, ou bien d'ouvrir l'autre.\r\n\r\nQuelle est la probabilité que vous remportiez la voiture si vous décidez de changer d'avis après l'intervention du présentateur ?\r\n\r\n(Le résultat doit être proposé sous la forme d'une fraction)",
+        "reponse": "2/3",
+        "explication": "Vous avez 2 chances sur 3 de gagner si vous changez d'avis une fois l'intervention du présentateur.\r\n\r\nVoici l'explication (source : Wikipédia, Problème de Monty Hall)\r\n\r\n- Le premier affirme qu'après ouverture de la porte, il reste deux portes, chacune ayant tout autant de chances de cacher la voiture. On a donc tout autant de chances de gagner avec changement que sans changement.\r\n- Le second affirme que si l'on ne change pas la porte, on gagne si et seulement si on avait fait le bon choix au départ. Or ce choix avait une chance sur 3 d'être bon. Il y a donc 1/3 de chances de gagner sans changer, 2/3 de chances de gagner en changeant.",
         "difficulte": "Difficile",
         "statut": false
     },{
-        "titre": "",
-        "texte": "",
-        "reponse": "",
-        "explication": "",
+        "titre": "Pile ou face",
+        "texte": "Ludivine propose à Amandine et Silvaine de jouer à pile ou face.\r\n\r\nVoyant qu'elles ne sont pas intéressées, elle décide de leur proposerdes règles plus compliquées :\r\nElles doivent choisir toutes les deux une séquence de 3 résultats de pile ou face. La gagnante sera celle dont la séquence sortira en premier.\r\n\r\nAmandine, première à parler, propose Pile - Pile - Face (Noté PPF).\r\n\r\nSilvaine peut-elle proposer une séquence qui lui donnerait l'avantage ?\r\n\r\nLa réponse devra être notée avec les 3 premières lettres des résultats de la séquence (par ex : FFP pour Face - Pile - Pile)",
+        "reponse": "FPP",
+        "explication": "Face - Pile - Pile.\r\n\r\nAvec cette séquence, Silvaine a plus de chances de gagner qu'Amandine.\r\n\r\nAprès 2 lancés, il y a 4 combinaisons possibles :\r\n\r\nFF : Silvaine a son premier lancé(Face). Amandine ne pourra jamais gagner car dès que la pièce fera 2 fois pile (nécessaire au début de sa séquence), Silvaine aura gagné.\r\n\r\nFP : Silvaine gagne si le prochain lancé fat Pile, sinon (FPF), elle a le même avantaque que le cas FF.\r\n\r\nPF : Toujours le même avantage que FF.\r\n\r\nPP : C'est le seul cas où Amandine gagne à tous les coups.",
         "difficulte": "Difficile",
         "statut": false
     },{
-        "titre": "",
-        "texte": "",
-        "reponse": "",
-        "explication": "",
+        "titre": "Les sacs",
+        "texte": "Un sac de blé pèse les trois quarts d'un sac d'orge pesant 2kg de plus qu'un sac de blé.\r\n\r\nCombien pèse le sac de blé ?",
+        "reponse": "6",
+        "explication": "La réponse est 6kg.\r\n\r\nb = (3/4)*(b + 2)\r\n(4/3)*b = b + 2\r\nb / 3 = 2\r\nb = 6",
         "difficulte": "Difficile",
         "statut": false
     },{
-        "titre": "",
-        "texte": "",
-        "reponse": "",
-        "explication": "",
-        "difficulte": "Difficile",
-        "statut": false
-    },{
-        "titre": "",
-        "texte": "",
-        "reponse": "",
-        "explication": "",
-        "difficulte": "Difficile",
-        "statut": false
-    },{
-        "titre": "",
-        "texte": "",
-        "reponse": "",
-        "explication": "",
-        "difficulte": "Difficile",
-        "statut": false
-    },{
-        "titre": "",
-        "texte": "",
-        "reponse": "",
-        "explication": "",
-        "difficulte": "Difficile",
-        "statut": false
-    },{
-        "titre": "",
-        "texte": "",
-        "reponse": "",
-        "explication": "",
-        "difficulte": "Difficile",
-        "statut": false
-    },{
-        "titre": "",
-        "texte": "",
-        "reponse": "",
-        "explication": "",
+        "titre": "Casino simple",
+        "texte": "Silvaine joue dans un casino à pile ou face.\r\nElle doit lancer 3 pièces chaque tour et elle gagne le jackpot si les 3 tombent sur la même face. Quelle probabilité a-t-elle de gagner le jackpot ? (Le résultat devra être donné sous la forme d'une fraction)",
+        "reponse": "1/4",
+        "explication": "1/4.\r\nIl y a 8 tirages différents pour 3 pièces :\r\n- PPP\r\n- PPF\r\n- PFP\r\n- PFF\r\n- FPP\r\n- FPF\r\n- FFP\r\n- FFF\r\nParmi ces 8 tirages, 2 permettent de gagner le jackpot. Elle a donc 2 chances sur 8 soit 1 chances sur 4.",
         "difficulte": "Difficile",
         "statut": false
     }
