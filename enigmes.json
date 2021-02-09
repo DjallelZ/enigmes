@@ -87,4 +87,145 @@
         "difficulte": "Facile",
         "statut": false
     },
+    {
+        "titre": "La grande ponte",
+        "texte": "1000 poules pondent 1000 oeufs en 10 jours.\r\n\r\nCombien 500 poules pondent d'oeufs en 5 jours ? (On suppose qu'elles ne mettent pas 10 jours à pondre un oeuf)",
+        "reponse": "250",
+        "explication": "250. Si 500 poules pondent 500 oeufs en 10 jours, elles en pondront la moitié en 5 jours.",
+        "difficulte": "Moyen",
+        "statut": false
+    },{
+        "titre": "L'énigme du Sphinx",
+        "texte": "Cette énigme a été posée par le Sphinx à Oedipe arrivant à la ville de Thèbes.\r\n\r\nQu'est-ce qui a 4 pattes le matin, 2 le midi et 3 le soir ?",
+        "reponse": "homme",
+        "explication": "Le bébé marche à 4 pattes.\r\nL'adulte marche sur ses 2 jambes.\r\nLe vieillard a besoin d'une canne.\r\nC'est donc l'homme.",
+        "difficulte": "Moyen",
+        "statut": false
+    },{
+        "titre": "La suite logique",
+        "texte": "Trouvez l'étape suivante de cette suite logique :\r\n\r\n1\r\n11\r\n21\r\n1211\r\n111221\r\n312211",
+        "reponse": "13112221",
+        "explication": "A la dernière étape, il y avait \r\nun 3,\r\n\r\nun 1, deux 2, et deux 1.\r\n\r\nDonc 13112221",
+        "difficulte": "Moyen",
+        "statut": false
+    },{
+        "titre": "L'escargot glisseur",
+        "texte": "Un escargot est tombé dans un puits de 10 mètres de profondeur et essaye de le remonter.\r\nChaque jour il monte de 3 mètres et glisse de 2 mètres pendant la nuit.\r\n\r\nCombien de jours va-t-il lui falloir pour remonter à la surface ?",
+        "reponse": "8",
+        "explication": "8 jours : le dernier jour, il monte de 3 mètres et ne redescend pas vu qu'il est arrivé.",
+        "difficulte": "Moyen",
+        "statut": false
+    },{
+        "titre": "Composant temporel",
+        "texte": "Il y en a qu'un seul dans une minute, deux dans une heure. Mais aucun dans un jour.",
+        "reponse": "e",
+        "explication": "La lettre e.",
+        "difficulte": "Moyen",
+        "statut": false
+    },{
+        "titre": "L'église",
+        "texte": "Me rendant à l'église ce dimanche, j'ai croisé 1 homme et 7 femmes, chaque femme possédant 1 sac à main, chaque sac à main contenant une chatte, chaque chatte possédant 7 chatons.\r\n\r\nCombien de personnes vont à la messe ?",
+        "reponse": "1",
+        "explication": "1\r\n\r\nLe narrateur est la seule personne qui se rend à l'église. Il croise les autres personnes sur son chemin.",
+        "difficulte": "Moyen",
+        "statut": false
+    },{
+        "titre": "La souris",
+        "texte": "Vous possédez une souris depuis 1 an. Sachant qu'une souris peut produire 18 souris chaque mois à partir de 2 mois, combien posséderez-vous de souris au bout de 10 mois ?",
+        "reponse": "1",
+        "explication": "Une souris seule ne peut pas se reproduire. Vous n'aurez donc toujours qu'une souris dans 10 mois.",
+        "difficulte": "Moyen",
+        "statut": false
+    },{
+        "titre": "Le jour J",
+        "texte": "Si nous ne sommes pas le lendemain de lundi ou le jour avant jeudi, que demain n'est pas dimanche, que ce n'était pas dimanche hier et que le jour d'après-demain n'est pas samedi, et que le jour avant hier n'était pas mercredi, quel jour sommes-nous ?",
+        "reponse": "dimanche",
+        "explication": "Les jours sont tous éliminés sauf le Dimanche.",
+        "difficulte": "Moyen",
+        "statut": false
+    },{
+        "titre": "Les cousines",
+        "texte": "Sylvie, qui n'a pas de soeurs, a treize cousines. Son cousin Pierre a huit cousines.\r\nTrois des cousines de Sylvie ne sont pas de la famille de Pierre ; deux des cousines de Pierre ne sont pas de la famille de Sylvie.\r\n\r\nCombien Pierre a t-il de soeurs ?",
+        "reponse": "5",
+        "explication": "Pierre a 5 soeurs.\r\n\r\nSylvie a 13 cousines, 3 ne sont pas de la famille de Pierre.\r\n\r\nCeci implique que Pierre a donc en tout 10 soeurs et cousines.\r\n\r\nPierre a 8 cousines dont 2 ne sont pas de la famille de Sylvie.\r\n\r\nIl en reste donc 6 en rapport avec Sylvie moins Sylvie elle-même donc 5.\r\n\r\nPierre a donc 10 - 5 = 5 soeurs.",
+        "difficulte": "Moyen",
+        "statut": false
+    },{
+        "titre": "Ehhh",
+        "texte": "Qu'est-ce qui m'appartient mais que les autres utilisent plus que moi ?",
+        "reponse": "prenom",
+        "explication": "C'est votre prénom",
+        "difficulte": "Moyen",
+        "statut": false
+    },{
+        "titre": "Corps étrange",
+        "texte": "Cette énigme a été créée par l'écrivain Charles Cotin en 1646.\r\n\r\nMon corps est sans couleur comme celui des eaux,\r\nEt selon la rencontre il change de figure ;\r\nJe fais plus d'un seul trait que toute la peinture,\r\nEt puis mieux qu'un Apelle animer mes tableaux.\r\n\r\nJe donne des conseils aux esprits les plus beaux,\r\nEt ne leur montre rien que la vérité pure ;\r\nJ'enseigne sans parler autant que le jour dure,\r\nEt la nuit on me vient consulter aux flambeaux.\r\n\r\nParmi les curieux j'établis mon Empire,\r\nJe représente aux Rois ce qu'on n'ose leur dire,\r\nEt je ne puis flatter ni mentir à la Cour.\r\n\r\nComme un autre Pâris je juge les Déesses,\r\nQui m'offrent leurs beautés, leurs grâces, leur richesses,\r\nEt j'augmente souvent les charmes de l'amour.\r\nQui suis-je ?",
+        "reponse": "miroir",
+        "explication": "Un miroir",
+        "difficulte": "Difficile",
+        "statut": false
+    },{
+        "titre": "",
+        "texte": "",
+        "reponse": "",
+        "explication": "",
+        "difficulte": "Difficile",
+        "statut": false
+    },{
+        "titre": "",
+        "texte": "",
+        "reponse": "",
+        "explication": "",
+        "difficulte": "Difficile",
+        "statut": false
+    },{
+        "titre": "",
+        "texte": "",
+        "reponse": "",
+        "explication": "",
+        "difficulte": "Difficile",
+        "statut": false
+    },{
+        "titre": "",
+        "texte": "",
+        "reponse": "",
+        "explication": "",
+        "difficulte": "Difficile",
+        "statut": false
+    },{
+        "titre": "",
+        "texte": "",
+        "reponse": "",
+        "explication": "",
+        "difficulte": "Difficile",
+        "statut": false
+    },{
+        "titre": "",
+        "texte": "",
+        "reponse": "",
+        "explication": "",
+        "difficulte": "Difficile",
+        "statut": false
+    },{
+        "titre": "",
+        "texte": "",
+        "reponse": "",
+        "explication": "",
+        "difficulte": "Difficile",
+        "statut": false
+    },{
+        "titre": "",
+        "texte": "",
+        "reponse": "",
+        "explication": "",
+        "difficulte": "Difficile",
+        "statut": false
+    },{
+        "titre": "",
+        "texte": "",
+        "reponse": "",
+        "explication": "",
+        "difficulte": "Difficile",
+        "statut": false
+    }
 ]
