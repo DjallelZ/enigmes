@@ -1,7 +1,7 @@
 [
     {
         "titre": "L'énigme de Stanford",
-        "texte": "Cette énigme fut posée aux étudiants de l'université de Stanford lors d'une épreuve de réflexion.\r\n - C'est mieux que Dieu\r\n - C'est pire que le diable\r\n - Les pauvres en ont\r\n - Les riches en ont besoin\r\n - Et si on en mange, on meurt\r\n Qu'est-ce que c'est ?",
+        "texte": "Cette énigme fut posée aux étudiants de l'université de Stanford lors d'une épreuve de réflexion.\r\n\r\n - C'est mieux que Dieu\r\n - C'est pire que le diable\r\n - Les pauvres en ont\r\n - Les riches en ont besoin\r\n - Et si on en mange, on meurt\r\n\r\n Qu'est-ce que c'est ?",
         "reponse": "rien",
         "explication": "Rien n'est mieux que Dieu,\r\nRien n'est pire que le diable,\r\nLes pauvres n'ont rien,\r\nLes riches ont besoin de rien,\r\nEt on meurt si on ne mange rien.",
         "difficulte": "Facile",
@@ -17,7 +17,7 @@
     },
     {
         "titre": "Le nénuphar géant",
-        "texte": "Un nénuphar se trouvant dans un lac double de taille chaque jour. Au bout de 10 jours, il couvre la moitié du lac.\r\nCombien de jours aura-t-il fallu en tout pour le recouvrir entièrement ?",
+        "texte": "Un nénuphar se trouvant dans un lac double de taille chaque jour. Au bout de 10 jours, il couvre la moitié du lac.\r\n\r\nCombien de jours aura-t-il fallu en tout pour le recouvrir entièrement ?",
         "reponse": "11",
         "explication": "11 jours car il double de taille chaque jour, donc il prendra l'autre moitié du lac en une journée.",
         "difficulte": "Facile",
@@ -25,18 +25,66 @@
     },
     {
         "titre": "La prescription",
-        "texte": "Votre médecin vous a donné un traitement de trois gélules. Il faut en prendre une toutes les demi-heures.\r\nQuelle est la durée du traitement en minutes ?",
+        "texte": "Votre médecin vous a donné un traitement de trois gélules. Il faut en prendre une toutes les demi-heures.\r\n\r\nQuelle est la durée du traitement en minutes ?",
         "reponse": "60",
         "explication": "La première gélule se prend instantanément, le traitement commence.\r\nLa deuxième se prend 30 minutes après la première.\r\nLa troisième se prend 60 minutes après la première.\r\n\r\nLe traitement a donc duré 60 minutes.",
         "difficulte": "Facile",
         "statut": false
     },
     {
-        "titre": "Enigme 5",
-        "texte": "bah juste l'enigme 5, que veux-tu ?",
-        "reponse": "reponse5",
-        "explication": "R.A.S.",
-        "difficulte": "Difficile",
+        "titre": "Le père et le fils",
+        "texte": "Un père a 30 ans de plus que son fils. Le père et le fils ont à eux deux 36 ans.\r\n\r\nQuel est l'âge du père ?",
+        "reponse": "33",
+        "explication": "Le père a 33 ans.\r\n\r\nSoit x l'âge du père, y l'âge du fils.\r\n\r\nx + y = 36\r\n\r\ny + 30 = x\r\n\r\nOn a donc :\r\n\r\ny + 30 + y = 36\r\n\r\n2y = 36\r\n\r\ny = 3\r\n\r\nDonc x = 33\r\n\r\nLe fils ne peut avoir 6 ans et le père 30 ans car 30 - 6 = 24 ans de différence.",
+        "difficulte": "Facile",
         "statut": false
-    }
+    },
+    {
+        "titre": "Le fumeur chevronné",
+        "texte": "Sachant que l'on a besoin de 3 mégots pour faire 1 cigarette, combien peut-on fumer de cigarettes en ayant 10 cigarettes au début ?",
+        "reponse": "14",
+        "explication": "10 cigarettes donnent 10 mégots.\r\n\r\n10 mégots donnent 3 cigarettes et 1 mégot.\r\nIl fume ces 3 cigarettes, il lui reste 4 mégots.\r\nIl en produit une dernière et il lui reste 2 mégots.\r\n\r\nIl a donc fumé 14 cigarettes.\r\n\r\nS'il pouvait emprunter une cigarette il pourrait la fumer puis la rendre.",
+        "difficulte": "Facile",
+        "statut": false
+    },
+    {
+        "titre": "La lettre suivante",
+        "texte": "Quelle est la lettre suivante de cette suite :\r\n\r\nJ - F - M - A - M - J - J - ?",
+        "reponse": "a",
+        "explication": "Janvier - Février - Mars - Avril - Mai - Juin - Juillet - Août.\r\nA",
+        "difficulte": "Facile",
+        "statut": false
+    },
+    {
+        "titre": "Les chaussettes",
+        "texte": "Dans un tiroir se trouvent 24 chaussettes rouges et 24 chaussettes vertes. La pièce étant plongée dans le noir, combien faudra-t-il prendre de chaussettes au minimum pour être sûr d'avoir une paire de la même couleur ?",
+        "reponse": "3",
+        "explication": "En prenant 3 chaussettes, nous aurons soit 2 rouges et 1 verte, soit 2 vertes et 1 rouge, soit 3 vertes, soit 3 rouges.\r\n\r\nVous aurez donc bien une paire de la même couleur.",
+        "difficulte": "Facile",
+        "statut": false
+    },
+    {
+        "titre": "Le petit frère",
+        "texte": "David a 10 ans, son petit frère Franck a la moitié de son âge. Quand David sera 10 fois plus âgé, quel âge aura Franck ?",
+        "reponse": "95",
+        "explication": "Il y aura toujours un écart de 5 ans entre eux, donc David aura 100 ans et Franck 95 ans.",
+        "difficulte": "Facile",
+        "statut": false
+    },
+    {
+        "titre": "Les steaks",
+        "texte": "Dans un restaurant, une commande est passée pour 3 steaks mais le grill ne peut en cuire que 2 à la fois.\r\n\r\nSachant qu'il faut 3 minutes de cuisson par face, quel sera (en minutes) le temps minimum pour la cuisson des 3 steaks ?",
+        "reponse": "9",
+        "explication": "1. On fait cuire 2 faces de 2 steaks (3 minutes).\r\n2. On en retourne un, on met l'autre de côté pour mettre le 3ème (3 minutes).\r\n3. On enlève celui qui est cuit, on retourne le 3ème et on remet le 2ème(3 minutes).\r\nil faudra donc 9 minutes.",
+        "difficulte": "Facile",
+        "statut": false
+    },
+    {
+        "titre": "Le chiffre 9",
+        "texte": "Combien de fois trouve-t-on le chiffre 9 dans la série de nombres entiers de 1 à 100 ?",
+        "reponse": "20",
+        "explication": "9, 19, 29, 39, 49, 59, 69, 79, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99.\r\nSoit 20 fois, et non 19, le nombre 99 en contenant 2.",
+        "difficulte": "Facile",
+        "statut": false
+    },
 ]
