@@ -151,7 +151,7 @@
         <scene sceneID="X0n-iJ-kDd">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="JXL-bn-xhK" customClass="EnigmeViewController" customModule="enigmes" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hH9-WE-elT">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="hH9-WE-elT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -165,23 +165,27 @@
                                 <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8iE-SZ-Sp9">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8iE-SZ-Sp9">
                                 <rect key="frame" x="20" y="478" width="384" height="34"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="RXR-n3-ZH3"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="V01-rk-Ido"/>
                                     <constraint firstAttribute="width" constant="374" id="fRb-zm-CrC"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="384" id="zqd-Zj-4dT"/>
                                 </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2G-Du-PXQ">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2G-Du-PXQ">
                                 <rect key="frame" x="137" y="542" width="120" height="50"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="QZI-5N-2AQ"/>
                                     <constraint firstAttribute="width" constant="120" id="STK-UH-2mr"/>
                                     <constraint firstAttribute="height" constant="50" id="TPw-f3-ehs"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="cFD-gA-bt5"/>
                                 </constraints>
                                 <state key="normal" title="Soumettre">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -190,7 +194,7 @@
                                     <action selector="clicBoutonReponse:" destination="JXL-bn-xhK" eventType="touchUpInside" id="WiJ-Af-F1h"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="weU-Aw-A5I">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="weU-Aw-A5I">
                                 <rect key="frame" x="10" y="194" width="374" height="254"/>
                                 <color key="backgroundColor" red="0.13002202930000001" green="0.1027003297" blue="0.080605419110000007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -214,6 +218,7 @@
                             <constraint firstItem="6Na-Ho-fEd" firstAttribute="top" secondItem="75A-MW-Zzx" secondAttribute="top" constant="15" id="AZn-tg-ld8"/>
                             <constraint firstItem="8iE-SZ-Sp9" firstAttribute="centerX" secondItem="hH9-WE-elT" secondAttribute="centerX" id="C3F-py-sg8"/>
                             <constraint firstItem="weU-Aw-A5I" firstAttribute="centerX" secondItem="hH9-WE-elT" secondAttribute="centerX" id="FxQ-Ft-Yzq"/>
+                            <constraint firstItem="75A-MW-Zzx" firstAttribute="bottom" secondItem="R2G-Du-PXQ" secondAttribute="bottom" constant="20" id="LbA-iB-Sfe"/>
                             <constraint firstItem="8iE-SZ-Sp9" firstAttribute="top" secondItem="weU-Aw-A5I" secondAttribute="bottom" constant="20" id="OgB-X7-4ln"/>
                             <constraint firstAttribute="trailing" secondItem="8iE-SZ-Sp9" secondAttribute="trailing" constant="20" id="WxN-Yf-taH"/>
                             <constraint firstItem="R2G-Du-PXQ" firstAttribute="centerX" secondItem="hH9-WE-elT" secondAttribute="centerX" id="Xst-XQ-qaM"/>
@@ -225,13 +230,14 @@
                             <constraint firstItem="8iE-SZ-Sp9" firstAttribute="leading" secondItem="75A-MW-Zzx" secondAttribute="leading" constant="20" id="tda-60-8Dh"/>
                             <constraint firstItem="75A-MW-Zzx" firstAttribute="trailing" secondItem="weU-Aw-A5I" secondAttribute="trailing" constant="10" id="tkB-Gz-iOm"/>
                             <constraint firstItem="weU-Aw-A5I" firstAttribute="top" secondItem="6Na-Ho-fEd" secondAttribute="bottom" constant="5" id="tmO-Co-Zk6"/>
+                            <constraint firstItem="R2G-Du-PXQ" firstAttribute="top" secondItem="8iE-SZ-Sp9" secondAttribute="bottom" constant="20" id="vIq-Pu-PaV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aEu-ws-fhh"/>
                     <connections>
                         <outlet property="reponseBouton" destination="R2G-Du-PXQ" id="Bs3-XL-Zku"/>
                         <outlet property="reponseTextFieldLabel" destination="8iE-SZ-Sp9" id="v2i-52-5ct"/>
-                        <outlet property="texteTextField" destination="weU-Aw-A5I" id="HgC-d4-yxf"/>
+                        <outlet property="texteTextView" destination="weU-Aw-A5I" id="HgC-d4-yxf"/>
                         <outlet property="titreEnigmeLabel" destination="6Na-Ho-fEd" id="uaC-5d-Fh5"/>
                     </connections>
                 </viewController>
