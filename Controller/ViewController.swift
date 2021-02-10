@@ -1,18 +1,9 @@
-//
-//  ViewController.swift
-//  enigmes
-//
-//  Created by DZ on 30/01/2021.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-    
+    // Boutons de difficulté
     @IBOutlet weak var boutonFacile: UIButton!
-    
     @IBOutlet weak var boutonMoyen: UIButton!
-    
     @IBOutlet weak var boutonDifficile: UIButton!
     
     
@@ -32,7 +23,7 @@ class ViewController: UIViewController {
         } else if boutonEmetteur.currentTitle == "Difficile" {
             difficulteEmise = "Difficile"
         }
-        
+        // On vérifie que c'est bien la vue List qui est destinataire du clic pour lui envoyer la variable
         if segue.destination is ListViewController {
             let viewController = segue.destination as? ListViewController
             viewController?.difficulteChoisie = difficulteEmise

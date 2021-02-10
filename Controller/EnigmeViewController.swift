@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  enigmes
-//
-//  Created by DZ on 30/01/2021.
-//
-
 import UIKit
 
 class EnigmeViewController: UIViewController {
@@ -12,12 +5,13 @@ class EnigmeViewController: UIViewController {
     // Variable contenant l'enigme envoyé par ListViewController suite au clic sur celle-ci dans la liste
     var enigme: Enigme = Enigme(titre: "", texte: "", reponse: "", explication: "", difficulte: "", statut: false)
     
+    // Titre de l'énigme
     @IBOutlet weak var titreEnigmeLabel: UILabel!
-    
+    // Texte descriptif de l'énigme
     @IBOutlet weak var texteTextView: UITextView!
-    
+    // Champ de saisie de la réponse
     @IBOutlet weak var reponseTextFieldLabel: UITextField!
-    
+    // Bouton de soumission de la réponse
     @IBOutlet weak var reponseBouton: UIButton!
     
     override func viewDidLoad() {
@@ -29,6 +23,7 @@ class EnigmeViewController: UIViewController {
     
     // Méthode lancée au clic sur le bouton "Soumettre"
     @IBAction func clicBoutonReponse(_ sender: Any) {
+        // Définition d'une alerte
         var alertController:UIAlertController
         
         // Définition du bouton de réponse à l'alerte donnée juste après

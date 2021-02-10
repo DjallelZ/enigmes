@@ -1,18 +1,11 @@
-//
-//  ViewController.swift
-//  enigmes
-//
-//  Created by DZ on 30/01/2021.
-//
-
 import UIKit
 
 class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+    // Titre de l'énigme
     @IBOutlet weak var enigmeLabel: UILabel!
-    
+    // Bouton englobant le titre de l'énigme à afficher ensuite
     @IBOutlet weak var enigmeTitreBouton: UIButton!
-    
+    // Déclaration de la variable pour recevoir la difficulté de la vue précédente
     var difficulteChoisie: String = ""
   
     override func viewDidLoad() {
